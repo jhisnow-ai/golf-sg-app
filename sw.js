@@ -5,7 +5,7 @@
 // DEV NOTE: When you edit app files, bump this version string (v1 → v2 etc.)
 // so the service worker discards the old cache and re-fetches everything.
 // On the phone this is what you want; during local dev just increment on each deploy.
-const CACHE_NAME = 'golf-sg-v1';
+const CACHE_NAME = 'golf-sg-v2';
 
 // Every file the app needs to function offline.
 // If you add a new file (e.g. a new JS module), add it here too.

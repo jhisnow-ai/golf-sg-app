@@ -294,3 +294,184 @@ html, body {
 
 .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
 .modal-actions .btn { flex: 1; }
+
+/* ── Home screen: second action button ── */
+#home-screen .actions { display: flex; flex-direction: column; gap: 12px; padding: 0 16px 24px; }
+
+/* ── Tee select screen ── */
+.tee-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  min-height: var(--tap);
+}
+.tee-card:active { filter: brightness(1.1); }
+.tc-swatch {
+  width: 14px;
+  height: 48px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.tc-info { flex: 1; }
+.tc-name { font-weight: 700; font-size: 1rem; }
+.tc-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 3px; }
+.tc-arrow { color: var(--text-muted); font-size: 1.3rem; }
+
+/* Small tee colour chip used in recent round cards */
+.tee-chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* ── Manage Courses list ── */
+/* (re-uses .course-card styles; nothing extra needed) */
+
+/* ── Course editor screen ── */
+.editor-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 4px 0;
+  margin-bottom: 20px;
+}
+.section-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* Text / number inputs */
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--green-mid);
+}
+.input-row:last-child { border-bottom: none; }
+.input-row label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 100px;
+}
+.input-row input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  text-align: right;
+  flex: 1;
+  min-width: 0;
+  outline: none;
+  font-family: inherit;
+}
+.input-row input::placeholder { color: var(--surface2); }
+
+/* Tee rows in course editor */
+.tee-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.tee-row-swatch {
+  width: 10px;
+  height: 36px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.tee-row-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tee-row-info strong { font-size: 0.95rem; }
+.tee-row-info span   { font-size: 0.78rem; color: var(--text-muted); }
+
+/* Hole rows in course editor */
+.hole-editor-row {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  min-height: 48px;
+}
+.hole-editor-row:active { background: var(--surface2); }
+.her-no {
+  font-weight: 700;
+  color: var(--green-light);
+  font-size: 0.95rem;
+  width: 22px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.her-par-si {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  width: 64px;
+  flex-shrink: 0;
+}
+.her-dists {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.her-chevron { color: var(--text-muted); font-size: 1.1rem; }
+
+/* Small distance chips in hole editor rows */
+.dist-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1.5px solid;
+  background: transparent;
+}
+
+/* Tee dot in hole editor modal */
+.he-tee-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Distance input inside hole editor modal */
+.dist-input {
+  background: var(--surface);
+  border: 1px solid var(--green-mid);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  width: 80px;
+  padding: 8px;
+  outline: none;
+}
+.dist-input:focus { border-color: var(--green-light); }

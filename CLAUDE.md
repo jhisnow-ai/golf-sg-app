@@ -60,6 +60,23 @@ is a swappable data file (`data/baseline-hcp5.json`). Seed with a documented sta
 table; refine as the user's real data accumulates. Flag clearly in code comments which
 numbers are provisional.
 
+## Course data model
+
+Each course has:
+- `id` — kebab-case string (e.g. `"te-puke"`). Built-in courses come from
+  `data/courses.json`; editing one saves a same-id copy to `customCourses` in
+  IndexedDB which takes precedence on load.
+- `name`, `location` — display strings.
+- `holes[]` — 18 entries: `{ no, par, si }`. Par and stroke index are
+  tee-independent; distances live in the tee objects.
+- `tees[]` — one entry per tee set: `{ name, rating, slope, distances[] }`.
+  `rating` (course rating) and `slope` are stored now for Phase 4 handicap
+  differentials. `distances` is an 18-element array in hole order.
+
+A round snapshot stores `teeName`, `teeRating`, `teeSlope`, and the distance
+for each hole at the time the round was started, so historical rounds are
+unaffected by later course edits.
+
 ## Build phases (work on the CURRENT phase only unless told otherwise)
 
 1. **[CURRENT] Pipeline + scorecard.** App shell + PWA manifest + service worker.

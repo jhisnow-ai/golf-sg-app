@@ -3,50 +3,78 @@
     "id": "te-puke",
     "name": "Te Puke Golf Club",
     "location": "Te Puke, Bay of Plenty, NZ",
+    "tees": [
+      {
+        "name": "Blue",
+        "rating": 71.2,
+        "slope": 128,
+        "distances": [340, 490, 155, 355, 395, 140, 475, 330, 360, 370, 500, 160, 385, 410, 130, 480, 345, 375]
+      },
+      {
+        "name": "White",
+        "rating": 69.5,
+        "slope": 124,
+        "distances": [318, 468, 142, 338, 374, 128, 453, 313, 342, 350, 476, 148, 365, 388, 118, 458, 326, 354]
+      }
+    ],
     "holes": [
-      { "no": 1,  "par": 4, "si": 9,  "metres": 340 },
-      { "no": 2,  "par": 5, "si": 3,  "metres": 490 },
-      { "no": 3,  "par": 3, "si": 15, "metres": 155 },
-      { "no": 4,  "par": 4, "si": 7,  "metres": 355 },
-      { "no": 5,  "par": 4, "si": 1,  "metres": 395 },
-      { "no": 6,  "par": 3, "si": 17, "metres": 140 },
-      { "no": 7,  "par": 5, "si": 5,  "metres": 475 },
-      { "no": 8,  "par": 4, "si": 11, "metres": 330 },
-      { "no": 9,  "par": 4, "si": 13, "metres": 360 },
-      { "no": 10, "par": 4, "si": 10, "metres": 370 },
-      { "no": 11, "par": 5, "si": 4,  "metres": 500 },
-      { "no": 12, "par": 3, "si": 16, "metres": 160 },
-      { "no": 13, "par": 4, "si": 6,  "metres": 385 },
-      { "no": 14, "par": 4, "si": 2,  "metres": 410 },
-      { "no": 15, "par": 3, "si": 18, "metres": 130 },
-      { "no": 16, "par": 5, "si": 8,  "metres": 480 },
-      { "no": 17, "par": 4, "si": 12, "metres": 345 },
-      { "no": 18, "par": 4, "si": 14, "metres": 375 }
+      { "no": 1,  "par": 4, "si": 9  },
+      { "no": 2,  "par": 5, "si": 3  },
+      { "no": 3,  "par": 3, "si": 15 },
+      { "no": 4,  "par": 4, "si": 7  },
+      { "no": 5,  "par": 4, "si": 1  },
+      { "no": 6,  "par": 3, "si": 17 },
+      { "no": 7,  "par": 5, "si": 5  },
+      { "no": 8,  "par": 4, "si": 11 },
+      { "no": 9,  "par": 4, "si": 13 },
+      { "no": 10, "par": 4, "si": 10 },
+      { "no": 11, "par": 5, "si": 4  },
+      { "no": 12, "par": 3, "si": 16 },
+      { "no": 13, "par": 4, "si": 6  },
+      { "no": 14, "par": 4, "si": 2  },
+      { "no": 15, "par": 3, "si": 18 },
+      { "no": 16, "par": 5, "si": 8  },
+      { "no": 17, "par": 4, "si": 12 },
+      { "no": 18, "par": 4, "si": 14 }
     ]
   },
   {
     "id": "summerhill",
     "name": "Summerhill Golf Club",
     "location": "Tauranga, Bay of Plenty, NZ",
+    "tees": [
+      {
+        "name": "Blue",
+        "rating": 70.8,
+        "slope": 126,
+        "distances": [350, 390, 465, 145, 400, 365, 135, 485, 345, 360, 150, 495, 380, 340, 395, 125, 470, 375]
+      },
+      {
+        "name": "White",
+        "rating": 69.1,
+        "slope": 122,
+        "distances": [328, 368, 442, 133, 378, 343, 123, 462, 323, 338, 138, 472, 358, 318, 372, 113, 447, 352]
+      }
+    ],
     "holes": [
-      { "no": 1,  "par": 4, "si": 11, "metres": 350 },
-      { "no": 2,  "par": 4, "si": 3,  "metres": 390 },
-      { "no": 3,  "par": 5, "si": 7,  "metres": 465 },
-      { "no": 4,  "par": 3, "si": 15, "metres": 145 },
-      { "no": 5,  "par": 4, "si": 1,  "metres": 400 },
-      { "no": 6,  "par": 4, "si": 9,  "metres": 365 },
-      { "no": 7,  "par": 3, "si": 17, "metres": 135 },
-      { "no": 8,  "par": 5, "si": 5,  "metres": 485 },
-      { "no": 9,  "par": 4, "si": 13, "metres": 345 },
-      { "no": 10, "par": 4, "si": 8,  "metres": 360 },
-      { "no": 11, "par": 3, "si": 16, "metres": 150 },
-      { "no": 12, "par": 5, "si": 2,  "metres": 495 },
-      { "no": 13, "par": 4, "si": 6,  "metres": 380 },
-      { "no": 14, "par": 4, "si": 14, "metres": 340 },
-      { "no": 15, "par": 4, "si": 4,  "metres": 395 },
-      { "no": 16, "par": 3, "si": 18, "metres": 125 },
-      { "no": 17, "par": 5, "si": 10, "metres": 470 },
-      { "no": 18, "par": 4, "si": 12, "metres": 375 }
+      { "no": 1,  "par": 4, "si": 11 },
+      { "no": 2,  "par": 4, "si": 3  },
+      { "no": 3,  "par": 5, "si": 7  },
+      { "no": 4,  "par": 3, "si": 15 },
+      { "no": 5,  "par": 4, "si": 1  },
+      { "no": 6,  "par": 4, "si": 9  },
+      { "no": 7,  "par": 3, "si": 17 },
+      { "no": 8,  "par": 5, "si": 5  },
+      { "no": 9,  "par": 4, "si": 13 },
+      { "no": 10, "par": 4, "si": 8  },
+      { "no": 11, "par": 3, "si": 16 },
+      { "no": 12, "par": 5, "si": 2  },
+      { "no": 13, "par": 4, "si": 6  },
+      { "no": 14, "par": 4, "si": 14 },
+      { "no": 15, "par": 4, "si": 4  },
+      { "no": 16, "par": 3, "si": 18 },
+      { "no": 17, "par": 5, "si": 10 },
+      { "no": 18, "par": 4, "si": 12 }
     ]
   }
 ]
