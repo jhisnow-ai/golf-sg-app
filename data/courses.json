@@ -1,0 +1,52 @@
+[
+  {
+    "id": "te-puke",
+    "name": "Te Puke Golf Club",
+    "location": "Te Puke, Bay of Plenty, NZ",
+    "holes": [
+      { "no": 1,  "par": 4, "si": 9,  "metres": 340 },
+      { "no": 2,  "par": 5, "si": 3,  "metres": 490 },
+      { "no": 3,  "par": 3, "si": 15, "metres": 155 },
+      { "no": 4,  "par": 4, "si": 7,  "metres": 355 },
+      { "no": 5,  "par": 4, "si": 1,  "metres": 395 },
+      { "no": 6,  "par": 3, "si": 17, "metres": 140 },
+      { "no": 7,  "par": 5, "si": 5,  "metres": 475 },
+      { "no": 8,  "par": 4, "si": 11, "metres": 330 },
+      { "no": 9,  "par": 4, "si": 13, "metres": 360 },
+      { "no": 10, "par": 4, "si": 10, "metres": 370 },
+      { "no": 11, "par": 5, "si": 4,  "metres": 500 },
+      { "no": 12, "par": 3, "si": 16, "metres": 160 },
+      { "no": 13, "par": 4, "si": 6,  "metres": 385 },
+      { "no": 14, "par": 4, "si": 2,  "metres": 410 },
+      { "no": 15, "par": 3, "si": 18, "metres": 130 },
+      { "no": 16, "par": 5, "si": 8,  "metres": 480 },
+      { "no": 17, "par": 4, "si": 12, "metres": 345 },
+      { "no": 18, "par": 4, "si": 14, "metres": 375 }
+    ]
+  },
+  {
+    "id": "summerhill",
+    "name": "Summerhill Golf Club",
+    "location": "Tauranga, Bay of Plenty, NZ",
+    "holes": [
+      { "no": 1,  "par": 4, "si": 11, "metres": 350 },
+      { "no": 2,  "par": 4, "si": 3,  "metres": 390 },
+      { "no": 3,  "par": 5, "si": 7,  "metres": 465 },
+      { "no": 4,  "par": 3, "si": 15, "metres": 145 },
+      { "no": 5,  "par": 4, "si": 1,  "metres": 400 },
+      { "no": 6,  "par": 4, "si": 9,  "metres": 365 },
+      { "no": 7,  "par": 3, "si": 17, "metres": 135 },
+      { "no": 8,  "par": 5, "si": 5,  "metres": 485 },
+      { "no": 9,  "par": 4, "si": 13, "metres": 345 },
+      { "no": 10, "par": 4, "si": 8,  "metres": 360 },
+      { "no": 11, "par": 3, "si": 16, "metres": 150 },
+      { "no": 12, "par": 5, "si": 2,  "metres": 495 },
+      { "no": 13, "par": 4, "si": 6,  "metres": 380 },
+      { "no": 14, "par": 4, "si": 14, "metres": 340 },
+      { "no": 15, "par": 4, "si": 4,  "metres": 395 },
+      { "no": 16, "par": 3, "si": 18, "metres": 125 },
+      { "no": 17, "par": 5, "si": 10, "metres": 470 },
+      { "no": 18, "par": 4, "si": 12, "metres": 375 }
+    ]
+  }
+]

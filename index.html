@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Golf SG</title>
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/golf-sg-app/manifest.json">
+
+  <!-- iOS home screen meta — these are Safari-specific, not covered by the manifest spec -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Golf SG">
+  <meta name="theme-color" content="#1a3a2a">
+
+  <!-- iOS home screen icons (Safari ignores manifest icons) -->
+  <link rel="apple-touch-icon" href="/golf-sg-app/icons/icon-192.png">
+
+  <link rel="stylesheet" href="/golf-sg-app/css/app.css">
+</head>
+<body>
+
+  <!-- ── SCREEN 1: Home ──────────────────────────────────────────────── -->
+  <div id="home-screen" class="screen active">
+    <div class="logo">
+      <h1>Golf SG</h1>
+      <p>Strokes Gained tracker</p>
+    </div>
+    <div class="actions">
+      <button id="new-round-btn" class="btn btn-primary">⛳ New Round</button>
+    </div>
+    <div class="content">
+      <div class="rounds-section">
+        <h2>Recent Rounds</h2>
+        <div id="rounds-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SCREEN 2: Course Select ─────────────────────────────────────── -->
+  <div id="course-screen" class="screen">
+    <div class="header">
+      <button id="back-to-home-from-course" class="back-btn">‹</button>
+      <h1>Select Course</h1>
+    </div>
+    <div class="content">
+      <div id="course-list"></div>
+      <!-- Phase 1: add-course is a stub; wired up in Phase 2 -->
+      <button class="btn btn-outline" style="margin-top:8px" disabled>+ Add New Course (coming soon)</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN 3: Scorecard ─────────────────────────────────────────── -->
+  <div id="scorecard-screen" class="screen">
+    <div class="header">
+      <button id="back-to-home-from-card" class="back-btn">‹</button>
+      <div style="flex:1">
+        <h1 id="card-course-name">—</h1>
+        <div style="font-size:0.75rem;color:var(--text-muted)" id="card-date"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Running totals -->
+      <div class="scorecard-summary">
+        <div>
+          <div class="ss-label">Total</div>
+          <div class="ss-value" id="card-total-score">—</div>
+        </div>
+        <div style="text-align:center">
+          <div class="ss-label">vs Par</div>
+          <div class="ss-value" id="card-rel-score">—</div>
+        </div>
+        <div style="text-align:right">
+          <div class="ss-label">Holes</div>
+          <div class="ss-value" id="card-holes-played">0/18</div>
+        </div>
+      </div>
+
+      <!-- 18 hole rows — rendered by app.js -->
+      <div id="holes-list"></div>
+    </div>
+  </div>
+
+  <!-- ── MODAL: Hole Entry ────────────────────────────────────────────── -->
+  <div id="hole-modal" class="modal-overlay">
+    <div class="modal-sheet">
+      <h2 id="modal-title">Hole — Par —</h2>
+
+      <!-- Score stepper -->
+      <div class="field-row">
+        <label>Score</label>
+        <div class="stepper">
+          <button id="score-dec">−</button>
+          <div class="step-val" id="score-val">4</div>
+          <button id="score-inc">+</button>
+        </div>
+      </div>
+
+      <!-- Putts stepper -->
+      <div class="field-row">
+        <label>Putts</label>
+        <div class="stepper">
+          <button id="putts-dec">−</button>
+          <div class="step-val" id="putts-val">2</div>
+          <button id="putts-inc">+</button>
+        </div>
+      </div>
+
+      <!-- Fairway in Regulation (hidden for par 3s) -->
+      <div class="toggle-row" id="fir-row">
+        <label>Fairway hit?</label>
+        <div class="toggle-group">
+          <button class="toggle-btn" id="fir-yes">Yes</button>
+          <button class="toggle-btn" id="fir-no">No</button>
+        </div>
+      </div>
+
+      <!-- Green in Regulation -->
+      <div class="toggle-row">
+        <label>GIR?</label>
+        <div class="toggle-group">
+          <button class="toggle-btn" id="gir-yes">Yes</button>
+          <button class="toggle-btn" id="gir-no">No</button>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="modal-cancel" class="btn btn-outline">Cancel</button>
+        <button id="modal-save"   class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dexie (IndexedDB wrapper) — loaded from CDN, cached by service worker -->
+  <script src="https://unpkg.com/dexie@3.2.4/dist/dexie.min.js"></script>
+  <!-- db.js must come before app.js because app.js uses `db` -->
+  <script src="/golf-sg-app/js/db.js"></script>
+  <script src="/golf-sg-app/js/app.js"></script>
+</body>
+</html>
